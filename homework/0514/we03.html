@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.blok 
+{
+  background-color: rgb(255, 255, 255);
+  padding: 0.1px;
+}
+.back
+{
+  background-color: rgba(255, 255, 255, 0.363);
+  padding: 8px;
+  color: #f1f1f1;
+  font-size: large;
+  text-align:center;
+}
+.back2
+{
+  background-color: rgba(0, 1, 73, 0.671);
+  padding: 8px;
+  color: #f1f1f1;
+  font-size: large;
+  text-align:center;
+  
+}
+
+body 
+{
+    background-image: url('https://mri88.com/wp-content/uploads/2017/08/cropped-ml0010.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(159, 166, 235);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2c07b1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {  color: #f1f1f1;}
+
+.sidenav .closebtn 
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+}
+</style>
+</head>
+
+<body onload="showTime()">
+<span style="font-size:30px;cursor:pointer;color: rgb(255, 255, 255);" onclick="openNav()">&#9776; About ME</span>
+<!--側拉的頭-->
+
+<script>
+/*開啟跟關閉*/
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+/*時間*/
+function showTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    document.getElementById('time').innerHTML = h+":"+m+":"+s;
+    setTimeout(showTime,1000);}
+</script>
+
+<!--回首頁跟下一個-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">(╭☞•́⍛•̀)╭☞</a>&times;</a>
+  <a href="https://laiy790.github.io/mine/web02.html">Family</a>
+  <a href="https://laiy790.github.io/mine/web01.html">Home</a>
+  
+</div>
+
+<h1 style="text-align:center;font-size: 200%;color: ghostwhite;">ＩＮＴＥＲＥＳＴ</h1>
+<p class="blok"></p>
+<pre class="back2";>喜歡的運動<br>╭☞跳舞
+<br><img class="back2"src ="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/p720x720/98955771_2726234174266059_7383272897512472576_o.jpg?_nc_cat=107&_nc_sid=e007fa&_nc_ohc=D4oAe9Sxo-0AX8pCZIN&_nc_ht=scontent.fkhh1-2.fna&_nc_tp=6&oh=b053eeb64d843a07410d323f6f5cc94e&oe=5EEDE43F"width="40%">
+<br>╭☞游泳<br>(在水裡面甚麼都看不到所以木有照片)<br>╭☞球類<br>(學校禁止用手機所以也木有照片)<br>╭☞直排輪<br>(年代太久遠所以也沒有照片)
+<br>會打的遊戲<br>╭☞Cytus╭☞Deemo<br><img class="back2"src ="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/98363272_2726249920931151_8529716320126631936_n.jpg?_nc_cat=103&_nc_sid=0be424&_nc_ohc=btc2fS1ttLAAX-cDtK6&_nc_ht=scontent.fkhh1-1.fna&oh=4afa9976b7f71e87fadde6a3ddf89cc0&oe=5EEEE56C"width="30%">
+<img class="back2"src ="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/100559256_2726250777597732_4678597155017981952_n.jpg?_nc_cat=110&_nc_sid=0be424&_nc_ohc=_jyOjw_z5noAX9riOWZ&_nc_ht=scontent.fkhh1-2.fna&oh=3d0b5cf04903affdc7264d30df4321f5&oe=5EEEA9E4"width="25%">
+<br>╭☞絕地求生m<br><img class="back2"src ="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/99123219_2726261654263311_48774133944680448_o.jpg?_nc_cat=108&_nc_sid=e007fa&_nc_ohc=Vz9NdiyzSgQAX9pXqkF&_nc_ht=scontent.fkhh1-2.fna&oh=1d52504047fdbf7e90eee029aded4b81&oe=5EED4FC4"width="30%">
+<img class="back2"src ="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/98450418_2726267717596038_3544078859425021952_n.jpg?_nc_cat=106&_nc_sid=0be424&_nc_ohc=48QztZo8p_sAX84joB5&_nc_ht=scontent.fkhh1-1.fna&oh=0dfb2e603395849455ddb58c145c30be&oe=5EEE8616"width="30%">
+<br>╭☞傳說對決<br><img class="back2"src ="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/100574732_2726268217595988_8043559398410289152_n.jpg?_nc_cat=106&_nc_sid=0be424&_nc_ohc=rof6fWX6bwcAX8e_mVh&_nc_ht=scontent.fkhh1-1.fna&oh=42d972462ddd02912e17e8faf6baddc9&oe=5EF05650"width="40%">
+<p class="back2">━(ﾟ∀ﾟ)━( ﾟ∀)━( ﾟ)━( )━( )━(ﾟ)━(∀ﾟ)━(ﾟ∀ﾟ)━( ﾟ∀)━( ﾟ)━( )━( )━(ﾟ)━(∀ﾟ)━(ﾟ∀ﾟ)━( ﾟ∀)━( ﾟ)━( )━( )━(ﾟ)━(∀ﾟ)━(ﾟ∀ﾟ)━( ﾟ∀)━( ﾟ)━</p>
+<img class="back2"src ="https://cultivatememe.moe/img/article/chinesememe2.jpg"width="10%">
+</pre>
+
+
+
+
+
+</body>
+<footer class="back";><div id="time";></div></footer>
+</html> 

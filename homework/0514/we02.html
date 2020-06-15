@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.blok 
+{
+  background-color: rgb(255, 255, 255);
+  padding: 0.1px;
+}
+.back
+{
+  background-color: rgba(255, 255, 255, 0.363);
+  padding: 8px;
+  color: #f1f1f1;
+  font-size: large;
+  text-align:center;
+}
+.back2
+{
+  background-color: rgba(0, 1, 73, 0.671);
+  padding: 8px;
+  color: #f1f1f1;
+  font-size: large;
+  text-align:center;
+  
+}
+
+body 
+{
+    background-image: url('https://mri88.com/wp-content/uploads/2017/08/cropped-ml0010.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(159, 166, 235);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2c07b1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {  color: #f1f1f1;}
+
+.sidenav .closebtn 
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+}
+</style>
+</head>
+
+<body onload="showTime()">
+<span style="font-size:30px;cursor:pointer;color: rgb(255, 255, 255);" onclick="openNav()">&#9776; About ME</span>
+<!--側拉的頭-->
+
+<script>
+/*開啟跟關閉*/
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+/*時間*/
+function showTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    document.getElementById('time').innerHTML = h+":"+m+":"+s;
+    setTimeout(showTime,1000);}
+</script>
+
+<!--回首頁跟下一個-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">(≧∀≦)ゞ</a>&times;</a>
+  <a href="https://laiy790.github.io/mine/web03.html">Interest</a>
+  <a href="https://laiy790.github.io/mine/web01.html">Home</a>
+  
+</div>
+
+<h1 style="text-align:center;font-size: 200%;color: ghostwhite;">ＦＡＭＩＬＹ</h1>
+<p class="blok"></p>
+<p class="back2";>一家四口外加 2 隻狗
+<br><img class="back2"src ="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/91970208_2870070386419523_2023332021966733312_n.jpg?_nc_cat=109&_nc_sid=110474&_nc_ohc=XDW9MfXtpJ8AX_duj1O&_nc_ht=scontent.fkhh1-2.fna&oh=039a806e29d11230c749ed0baae4a45c&oe=5EEDA8AB"width="40%">
+<br><img class="back2"src ="https://scontent.fkhh1-1.fna.fbcdn.net/v/t31.0-0/p206x206/20776589_2027242014165282_9029012110418669034_o.jpg?_nc_cat=100&_nc_sid=110474&_nc_ohc=MJVX4BPYUakAX8NjXjU&_nc_ht=scontent.fkhh1-1.fna&_nc_tp=6&oh=158428ed3928a1cf1b2ea155022313f4&oe=5EED3CB9"width="40%">
+<br><img class="back2"src ="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/99045951_2726214757601334_8104203280067854336_n.jpg?_nc_cat=109&_nc_sid=8024bb&_nc_ohc=f7xF4VHhVokAX9EWtmr&_nc_ht=scontent.fkhh1-2.fna&oh=e67da4f6ac1c5adcc72f4f3dc8a7ba72&oe=5EED266F"width="40%">
+<br><img class="back2"src ="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/100667251_2726222230933920_4228959210643128320_n.jpg?_nc_cat=109&_nc_sid=0be424&_nc_ohc=vqD2WqZMqlIAX-X7WjH&_nc_ht=scontent.fkhh1-2.fna&oh=095761562245f1d4c8568dcdfb3d3bd2&oe=5EED2AE4"width="20%">
+<img class="back2"src ="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/98466041_2726222244267252_4952302561659977728_n.jpg?_nc_cat=105&_nc_sid=0be424&_nc_ohc=UUErl_39ZB4AX_uJIe_&_nc_ht=scontent.fkhh1-1.fna&oh=1b954bc9424b4e363cd0ac7c6ea9effa&oe=5EEF51AE"width="20%">
+</p>
+
+
+
+
+
+</body>
+<footer class="back";><div id="time";></div></footer>
+</html> 
