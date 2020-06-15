@@ -8,7 +8,7 @@ const io = require('socket.io')(server);
 let onlineCount = 0;
 
 app.get('/', (req, res) => {
-    res.sendFile( __dirname + '/views/index.html');
+    res.sendFile( __dirname + '/views/2020061602.html');
 });
 
 io.on('connection', (socket) => {
@@ -38,7 +38,7 @@ io.on('connection', (socket) => {
 });
 
 server.listen(3000, () => {
-    console.log("Server Started. http://localhost:3000");
+    console.log("Server Started. https://laiy790.github.io/wp108b/homework/final/2020061602.html");
 });
 
 
@@ -51,7 +51,7 @@ const io = require('socket.io')(server);
 let onlineCount = 0;
  
 app.get('/', (req, res) => {
-    res.sendFile( __dirname + '/views/index.html');
+    res.sendFile( __dirname + '/views/2020061602.html');
 });
  
 io.on('connection', (socket) => {
@@ -81,5 +81,5 @@ io.on('connection', (socket) => {
 });
  
 server.listen(3000, () => {
-    console.log("Server Started. http://localhost:3000");
+    console.log("Server Started. https://laiy790.github.io/wp108b/homework/final/2020061602.html");
 });
