@@ -8,7 +8,7 @@ Report.html = `
     </table>
     <br/>
     <div class="center">
-      <label>本日總收入：</label>
+      <label>總收入：</label>
       <label id="dayTotal"></label>
       <br/><br/>
       <button onclick="Shop.start()">回主選單</button>

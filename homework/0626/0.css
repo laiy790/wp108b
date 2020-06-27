@@ -7,7 +7,7 @@ input:disabled, button:disabled {
     padding: 10px 15px;
   }
   
-  /* main : 參考: https://codepen.io/legeoffrey/pen/mydrVo */
+  
   * {
     margin: 0px;
     padding: 0px;
@@ -102,10 +102,10 @@ input:disabled, button:disabled {
   }
   
   button {
-    border: none; /* Remove borders */
-    color: white; /* Add a text color */
-    padding: 5px 10px; /* Add some padding */
-    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    border: none; 
+    color: white; 
+    padding: 5px 10px; 
+    cursor: pointer; 
     border-radius: 2px;
     background-color: #336699;
   }
@@ -127,7 +127,7 @@ input:disabled, button:disabled {
     background-color: brown;
   }
   
-  /* ----------------- Dropdown -----------------*/
+
   .navbar {
     overflow: hidden;
     background-color: #333;
@@ -193,7 +193,7 @@ input:disabled, button:disabled {
     display: block;
   }
   
-  /* ----------------- Side Nav --------------------*/
+
   
   .sidenav {
     height: 100%;
