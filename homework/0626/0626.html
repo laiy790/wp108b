@@ -1,9 +1,68 @@
 <html>
+  <style>
+  .back
+{
+  background-color: #5fbac0e5;
+  padding: 8px;
+  color: #f1f1f1;
+  font-size: large;
+  text-align:left;
+}
+.back1
+{
+  background-color: #5fbac0e5;
+  padding: 8px;
+  color: #f1f1f1;
+  font-size: large;
+  text-align:center;
+}
+.back2
+{
+  background-color: #1f3d3fe5;
+  padding: 8px;
+  color: #f1f1f1;
+  font-size: large;
+  text-align:center;
+}
+.back3
+{
+  background-color: #1e7e8594;
+  padding: 8px;
+  color: #f1f1f1;
+  font-size: 25px;
+  text-align:center;
+}
+  </style>
+  <script>
+  function showTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    document.getElementById('time').innerHTML = h+":"+m+":"+s;
+    setTimeout(showTime,1000);}</script>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="0.css"/>
 </head>
+<body style="background-color:rgba(14, 52, 90, 0.945);">
+<div class="back2">
+  <h2><br><br>餐點簡介<br></h2>
+</div>
+<div class="back">
+  <pre class="back3">紅茶          綠茶          烏龍茶</pre>
+  <pre class="back1"><img src="m1.jpg"width="200"height="200">   <img src="m2.jpg"width="200"height="200">   <img src="m3.jpg"width="200"height="200"></pre>
+ <!--紅茶的圖https://www.bosomgirl.com/2018/12/tea.html綠茶的圖https://www.google.com/url?sa=i&url=https%3A%2F%2Fhealth.udn.com%2Fhealth%2Fstory%2F6037%2F3349742&psig=AOvVaw3XIr5WUCzIHSdNrAPJ2-iI&ust=1593331695433000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCJC2vKbFoeoCFQAAAAAdAAAAABAD烏龍茶https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.businesstoday.com.tw%2Farticle%2Fcategory%2F151139%2Fpost%2F201903210036%2F%25E5%258F%25B0%25E7%2581%25A3%25E9%25AB%2598%25E5%25B1%25B1%25E7%2583%258F%25E9%25BE%258D%25E8%258C%25B6%25E6%2583%2585%25E7%2589%25BD%25E5%2585%25A9%25E5%25B2%25B8%2520%25E5%25B9%2595%25E5%25BE%258C%25E6%258E%25A8%25E6%2589%258B%25E6%2598%25AF%25E4%25BB%2596%25EF%25BC%2581&psig=AOvVaw2RCdy3agpLgSJJv3pxz0o6&ust=1593331803924000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCJCEmdPFoeoCFQAAAAAdAAAAABAh-->
+  <pre class="back3">鮮奶                  奶精</pre>
+  <pre class="back1"><img src="m4.jpg"width="200"height="200">    <img src="m5.jpg"width="200"height="200"></pre>  
+  <!--奶精https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.moccacoffee.com.tw%2Fportal_c1_cnt_page.php%3Fowner_num%3Dc1_30560%26button_num%3Dc1%26folder_id%3D4762%26cnt_id%3D30184&psig=AOvVaw1My2tiP-zLZqw2FrUJHTig&ust=1593332076576000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCNDTrtXGoeoCFQAAAAAdAAAAABAM鮮奶https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopee.tw%2F%25E3%2580%2590%25E5%25AF%25B5%25E9%25BA%25BB%25E5%2590%2589%25E3%2580%2591%25E6%2588%2580-%25E8%2581%25B7%25E4%25BA%25BA%25E9%25AE%25AE%25E5%25A5%25B6936ml(%25E5%2586%25B7%25E8%2597%258F%25E9%2585%258D%25E9%2580%2581)-i.175721182.6915346875&psig=AOvVaw3CIWsTTB8ePcFJ9BfRzY5b&ust=1593332214504000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCOiS-JbHoeoCFQAAAAAdAAAAABAE-->
+ 
+</div>
+</body>
+    
+
+
 <body onload="Shop.start()">
 <header>
   <div class="navbar" style="float:left">
@@ -27,11 +86,7 @@
 <aside>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="Ui.closeNav()">&times;</a>
-    <a href="#bbs">公告資訊</a>
-    <a href="#message">發訊息給商店</a>
-    <a href="#map">商店地圖</a>
-    <a href="#help">使用說明</a>
-    <a href="#license">軟體授權</a>
+    <a href="https://www.google.com/maps/@40.387949,108.1735836,22671583m/data=!3m1!1e3">商店地圖</a>
   </div>
 </aside>
 <main>
@@ -47,5 +102,7 @@
 <script src="4.js"></script>
 <script src="5.js"></script>
 <script src="6.js"></script>
+
 </body>
+<body onload="showTime()",class="back"></body>
 </html>
